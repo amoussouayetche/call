@@ -28,7 +28,7 @@
                                     <button class="block text-xl font-semibold text-gray-700 cursor-auto">{{$mesproduit->prix}} FCFA</button>
                                     <button class="text-lg block font-semibold py-2 px-6 text-green-100 hover:text-white bg-green-400 rounded-lg shadow hover:shadow-md transition duration-300">Buy</button>
                                     </div>
-                                    <add-to-cart> </add-to-cart>
+                                    <add-to-cart :produits-id="{{$mesproduit->id}}"> </add-to-cart>
                                     {{-- <add-to-card :produit-id="{{$mesproduit->id}}"></add-to-card> --}}
                                     {{-- bouton ajouter au panier,voir js composant, installer vue@next vuelaoder  --}}
                                 </div>
